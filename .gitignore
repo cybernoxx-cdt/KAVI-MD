@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Session / credentials (NEVER commit these)
+session_*/
+*.json.bak
+creds.json
+keys.json
+auth_info*/
+
+# Environment files (fill config.env locally, never push)
+config.env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temp
+tmp/

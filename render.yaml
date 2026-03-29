@@ -1,0 +1,46 @@
+services:
+  - type: web
+    name: QUEEN-KAVI-MD-MINI
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    plan: free
+    envVars:
+      - key: PORT
+        value: "5000"
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: MONGO_DB
+        value: KAVI-MD
+      - key: BOT_NAME
+        value: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ"
+      - key: OWNER_NAME
+        value: "Sᴀᴠᴇɴᴅʀᴀ Dᴀᴍᴘʀɪʏᴀ"
+      - key: OWNER_NUMBER
+        value: "94707085822"
+      - key: PREFIX
+        value: "."
+      - key: WORK_TYPE
+        value: public
+      - key: AUTO_AI
+        value: "true"
+      - key: AUTO_VIEW_STATUS
+        value: "true"
+      - key: AUTO_LIKE_STATUS
+        value: "true"
+      - key: AUTO_RECORDING
+        value: "false"
+      - key: AUTO_TYPING
+        value: "false"
+      - key: AUTO_READ_MESSAGE
+        value: "off"
+      - key: ANTI_CALL
+        value: "off"
+      - key: MAX_RETRIES
+        value: "3"
+      - key: BOT_VERSION
+        value: "1.0.0"
+      - key: OTP_EXPIRY
+        value: "300000"
