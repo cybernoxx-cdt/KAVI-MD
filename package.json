@@ -26,7 +26,8 @@
     "moment-timezone": "^0.6.0",
     "mongodb": "^5.7.0",
     "body-parser": "^1.20.2",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "figlet": "^1.7.0"
   },
   "overrides": {
     "jimp": "^0.22.12",
