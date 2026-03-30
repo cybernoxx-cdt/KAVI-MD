@@ -108,9 +108,15 @@ if (fs.existsSync(pluginPath)) {
         .filter(file => file.endsWith(".js"))
         .forEach(file => {
             try {
-                const plugin = require(path.join(pluginPath, file));
-                plugins.push(plugin);
-                console.log("✅ Lᴏᴀᴅᴇᴅ ᴘʟᴜɢɪɴ:", plugin.name);
+                const loaded = require(path.join(pluginPath, file));
+                // ✅ Support both single-object export AND array export
+                const list = Array.isArray(loaded) ? loaded : [loaded];
+                list.forEach(plugin => {
+                    if (plugin && plugin.name && plugin.command && plugin.execute) {
+                        plugins.push(plugin);
+                        console.log("✅ Lᴏᴀᴅᴇᴅ ᴘʟᴜɢɪɴ:", plugin.name);
+                    }
+                });
             } catch (e) {
                 console.error("❌ Pʟᴜɢɪɴ ʟᴏᴀᴅ ꜰᴀɪʟᴇᴅ:", file, e.message);
             }
