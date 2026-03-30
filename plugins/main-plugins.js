@@ -88,9 +88,23 @@ try {
   }
 });
 
-      const ownerdata = (await axios.get(
-        "https://raw.githubusercontent.com/savendra-dev/KAVI-MD-DATABASE/refs/heads/main/alivedata.json"
-      )).data;
+      const ownerdata = {
+        alivemsg: "✨ *Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ* ɪꜱ ᴏɴʟɪɴᴇ ᴀɴᴅ ʀᴇᴀᴅʏ! 🚀",
+        footer: "> ᴘᴏᴡᴇʀᴅ ʙʏ Qᴜᴇᴇɴ ᴋᴀᴠɪ ᴍɪɴɪ",
+        imageurl: "https://i.ibb.co/SzsVXwp/1bf2ea0ee756.jpg",
+        profileurl: "https://i.ibb.co/SzsVXwp/1bf2ea0ee756.jpg",
+        alivevideo: "https://files.catbox.moe/e3zmey.mp3",
+        version: "1.0.0",
+        jid: "120363405871120956@newsletter",
+        platform: "Heroku",
+        jidname: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ",
+        botname: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ",
+        ownername: "Sᴀᴠᴇɴᴅʀᴀ Dᴀᴍᴘʀɪʏᴀ",
+        ownernumber: "94707085822",
+        channel: "https://whatsapp.com/channel/0029VbCG0yxEwEk21tFzPT16",
+        pairlink: "https://kavi-md-a2ac26a5c95b.herokuapp.com",
+        title: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ"
+      };
 
       const {
         alivemsg,
@@ -248,9 +262,23 @@ module.exports = {
 
       const pushname = msg.pushName || "User";
 
-      const ownerdata = (await axios.get(
-        "https://raw.githubusercontent.com/savendra-dev/KAVI-MD-DATABASE/refs/heads/main/alivedata.json"
-      )).data;
+      const ownerdata = {
+        alivemsg: "✨ *Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ* ɪꜱ ᴏɴʟɪɴᴇ ᴀɴᴅ ʀᴇᴀᴅʏ! 🚀",
+        footer: "> ᴘᴏᴡᴇʀᴅ ʙʏ Qᴜᴇᴇɴ ᴋᴀᴠɪ ᴍɪɴɪ",
+        imageurl: "https://i.ibb.co/SzsVXwp/1bf2ea0ee756.jpg",
+        profileurl: "https://i.ibb.co/SzsVXwp/1bf2ea0ee756.jpg",
+        alivevideo: "https://files.catbox.moe/e3zmey.mp3",
+        version: "1.0.0",
+        jid: "120363405871120956@newsletter",
+        platform: "Heroku",
+        jidname: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ",
+        botname: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ",
+        ownername: "Sᴀᴠᴇɴᴅʀᴀ Dᴀᴍᴘʀɪʏᴀ",
+        ownernumber: "94707085822",
+        channel: "https://whatsapp.com/channel/0029VbCG0yxEwEk21tFzPT16",
+        pairlink: "https://kavi-md-a2ac26a5c95b.herokuapp.com",
+        title: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ"
+      };
 
       const {
         alivemsg,
@@ -338,18 +366,16 @@ END:VCARD`
 > 🌐 Wᴇʙ : Cᴏᴍɪɴɢ Sᴏᴏɴ
 > 🎬 Tᴜᴛᴏʀɪᴀʟ : Cᴏᴍɪɴɢ Sᴏᴏɴ`;
 
-      const pingMsg = await socket.sendMessage(
+      await socket.sendMessage(
         sender,
-        { image: {url: imageurl},
+        {
+          image: { url: imageurl },
           caption: systemMessage,
-          footer: footer,
-          buttons,
-          headerType: 4,
-           contextInfo: {
-                forwardingScore: 999,
-                isForwarded: true
-            }
- }, { quoted: shala });
+          contextInfo: {
+            forwardingScore: 999,
+            isForwarded: true
+          }
+        }, { quoted: shala });
 
       
 
@@ -379,9 +405,23 @@ module.exports = {
   }
 });
 
-      const ownerdata = (await axios.get(
-        "https://raw.githubusercontent.com/savendra-dev/KAVI-MD-DATABASE/refs/heads/main/alivedata.json"
-      )).data;
+      const ownerdata = {
+        alivemsg: "✨ *Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ* ɪꜱ ᴏɴʟɪɴᴇ ᴀɴᴅ ʀᴇᴀᴅʏ! 🚀",
+        footer: "> ᴘᴏᴡᴇʀᴅ ʙʏ Qᴜᴇᴇɴ ᴋᴀᴠɪ ᴍɪɴɪ",
+        imageurl: "https://i.ibb.co/SzsVXwp/1bf2ea0ee756.jpg",
+        profileurl: "https://i.ibb.co/SzsVXwp/1bf2ea0ee756.jpg",
+        alivevideo: "https://files.catbox.moe/e3zmey.mp3",
+        version: "1.0.0",
+        jid: "120363405871120956@newsletter",
+        platform: "Heroku",
+        jidname: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ",
+        botname: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ",
+        ownername: "Sᴀᴠᴇɴᴅʀᴀ Dᴀᴍᴘʀɪʏᴀ",
+        ownernumber: "94707085822",
+        channel: "https://whatsapp.com/channel/0029VbCG0yxEwEk21tFzPT16",
+        pairlink: "https://kavi-md-a2ac26a5c95b.herokuapp.com",
+        title: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ"
+      };
 
       const {
         alivemsg,
@@ -526,9 +566,23 @@ module.exports = {
         }
       });
 
-      const ownerdata = (await axios.get(
-        "https://raw.githubusercontent.com/savendra-dev/KAVI-MD-DATABASE/refs/heads/main/alivedata.json"
-      )).data;
+      const ownerdata = {
+        alivemsg: "✨ *Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ* ɪꜱ ᴏɴʟɪɴᴇ ᴀɴᴅ ʀᴇᴀᴅʏ! 🚀",
+        footer: "> ᴘᴏᴡᴇʀᴅ ʙʏ Qᴜᴇᴇɴ ᴋᴀᴠɪ ᴍɪɴɪ",
+        imageurl: "https://i.ibb.co/SzsVXwp/1bf2ea0ee756.jpg",
+        profileurl: "https://i.ibb.co/SzsVXwp/1bf2ea0ee756.jpg",
+        alivevideo: "https://files.catbox.moe/e3zmey.mp3",
+        version: "1.0.0",
+        jid: "120363405871120956@newsletter",
+        platform: "Heroku",
+        jidname: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ",
+        botname: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ",
+        ownername: "Sᴀᴠᴇɴᴅʀᴀ Dᴀᴍᴘʀɪʏᴀ",
+        ownernumber: "94707085822",
+        channel: "https://whatsapp.com/channel/0029VbCG0yxEwEk21tFzPT16",
+        pairlink: "https://kavi-md-a2ac26a5c95b.herokuapp.com",
+        title: "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ"
+      };
 
       const {
         alivemsg,
