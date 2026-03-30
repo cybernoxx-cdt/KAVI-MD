@@ -361,7 +361,7 @@ const vvPlugin = {
         message: quoted
       };
 
-      const { downloadContentFromMessage } = require('supunmd-bail');
+      const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 
       let stream, buffer, mimeType;
 
