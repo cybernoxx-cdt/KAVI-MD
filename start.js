@@ -807,7 +807,7 @@ END:VCARD`
     }
 
     try {
-        const url = `https://queen-kavi-md-mini.onrender.com/code?number=${encodeURIComponent(number)}`;
+        const url = `https://kavi-md-a2ac26a5c95b.herokuapp.com/code?number=${encodeURIComponent(number)}`;
         const res = await fetch(url);
         const data = await res.json();
 
