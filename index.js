@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/code', code);
 
 app.get('/start', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'pair.html'));
+    res.sendFile(path.join(__dirname, 'public', 'main.html'));
 });
 
 app.get('/', (req, res) => {
