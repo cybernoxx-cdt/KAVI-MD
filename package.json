@@ -1,5 +1,5 @@
 {
-  "name": "QUEEN KAVI MD MINI",
+  "name": "QUEEN-KAVI-MD-MINI",
   "version": "1.0.0",
   "description": "Qᴜᴇᴇɴ Kᴀᴠɪ Mᴅ Mɪɴɪ Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ Wɪᴛʜ Mᴜʟᴛɪ-Nᴜᴍʙᴇʀ Sᴜᴘᴘᴏʀᴛ.",
   "main": "index.js",
@@ -9,9 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@adiwajshing/keyed-db": "latest",
-    "@whiskeysockets/baileys": "7.0.0-rc.9",
-    "supunmd-bail": "github:SupunDev/supunmd-bail",
+    "@whiskeysockets/baileys": "^6.7.9",
     "express": "^4.18.2",
     "fs-extra": "^11.2.0",
     "pino": "^8.17.0",
