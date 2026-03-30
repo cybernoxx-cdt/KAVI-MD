@@ -24,7 +24,7 @@ const {
   jidNormalizedUser,
   downloadContentFromMessage,
   DisconnectReason
-} = require('supunmd-bail');
+} = require('@whiskeysockets/baileys');
 
 // Hᴇʟᴘᴇʀ ꜰᴜɴᴛɪᴏɴ ꜰᴏʀ ᴊꜱᴏɴ ꜰᴇᴛᴄʜ
 async function fetchJson(url) {
