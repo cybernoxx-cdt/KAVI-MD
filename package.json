@@ -11,7 +11,7 @@
   "dependencies": {
     "@adiwajshing/keyed-db": "latest",
     "@whiskeysockets/baileys": "7.0.0-rc.9",
-    "supunmd-bail": "latest",
+    "supunmd-bail": "github:SupunDev/supunmd-bail",
     "express": "^4.18.2",
     "fs-extra": "^11.2.0",
     "pino": "^8.17.0",
